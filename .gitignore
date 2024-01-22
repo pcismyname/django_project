@@ -5,6 +5,6 @@
 __pycache__/
 local_setting.py
 
-.env
+env/
 venv/
 db.sqlite3
