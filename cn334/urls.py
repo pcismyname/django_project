@@ -15,16 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from ecommerce import views as ecom_views
 
 urlpatterns = [
-<<<<<<< Updated upstream
-    path('admin/', admin.site.urls),
-]
-=======
  path("admin/", admin.site.urls),
  path("ecommerce/", ecom_views.ecommerce_index_view),
- path("ecommerce/item/<item_id>", ecom_views.item_view)
-
+ path("ecommerce/item/<item_id>", ecom_views.item_view),
+ path("ecommerce/homepage/", ecom_views.homepage, name='homepage'),
+ path("ecommerce/product/", ecom_views.product_page, name='product'),
+ path("ecommerce/category/", ecom_views.category_page, name='category'),
+ path("ecommerce/checkout/", ecom_views.checkout_page, name='checkout'),
+ path("ecommerce/contact/", ecom_views.contact_page, name='contact'),
 ]   
->>>>>>> Stashed changes
