@@ -18,5 +18,13 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+<<<<<<< Updated upstream
     path('admin/', admin.site.urls),
 ]
+=======
+ path("admin/", admin.site.urls),
+ path("ecommerce/", ecom_views.ecommerce_index_view),
+ path("ecommerce/item/<item_id>", ecom_views.item_view)
+
+]   
+>>>>>>> Stashed changes

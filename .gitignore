@@ -7,4 +7,5 @@ local_setting.py
 
 .env
 venv/
+env/
 db.sqlite3
