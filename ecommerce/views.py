@@ -4,10 +4,27 @@ from django.http import HttpResponse
 # Create your views here.
 def ecommerce_index_view(request):
  '''This function render index page of ecommerce views'''
- return HttpResponse('Welcome to 6410742040 Chidsanuphong Pengchai views!')
+ return HttpResponse('Welcome to 6410742040 Chidsanuphong Pengchai')
+
+def homepage(request):
+ return render(request,"home_page.html")
+
+def category_page(request):
+ return HttpResponse('category page')
+
+def product_page(request):
+ return HttpResponse('product page')
+
+def checkout_page(request):
+ return HttpResponse('checkout')
+
+def contact_page(request):
+ return HttpResponse('contact page')
 
 def item_view(request, item_id):
  context_data = {
  "item_id": item_id
  }
  return render(request, 'index.html',context = context_data)
+
+
