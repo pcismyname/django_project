@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        </tr>
+        <tr>
+        <td>6410742040</td>
+        <td>Chisanuphong</td>
+        <td>Pengchai</td>
+        </tr>
+        </table>
+    <nav>
+        <ul>
+            <li><a href="{% url 'homepage' %}">Homepage</a></li>
+            <li><a href="{% url 'product' %}">Product</a></li>
+            <li><a href="{% url 'category' %}">Category</a></li>
+            <li><a href="{% url 'checkout' %}">Checkout</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
